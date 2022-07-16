@@ -73,7 +73,7 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://hakancelik.dev
 
-  homepage: https://data_validation.hakancelik.dev
+  homepage: https://{{project-name}}.hakancelik.dev
 
 theme:
   name: material
@@ -113,9 +113,9 @@ theme:
     repo: fontawesome/brands/github
 
 copyright: Copyright &copy; 2020 - 2020 Hakan Çelik
-repo_url: https://github.com/hakancelikdev/unimport
-repo_name: hakancelikdev/data_validation
-edit_uri: https://github.com/hakancelikdev/data_validation/tree/master/docs
+repo_url: https://github.com/hakancelikdev/{{project-name}}
+repo_name: hakancelikdev/{{project-name}}
+edit_uri: https://github.com/hakancelikdev/{{project-name}}/tree/main/docs
 
 nav:
   - Home: index.md

@@ -10,7 +10,7 @@ jobs:
           python-version: "3.8"
           architecture: "x64"
 
-      - name: Build Unimport
+      - name: Build {{project-name}}
         run: python setup.py sdist
 
       - name: Publish a Python distribution to PyPI
