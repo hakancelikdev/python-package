@@ -1,0 +1,7 @@
+- id: {{project-name}}
+  name: {{project-name}}
+  description: "{{project-description}}"
+  entry: {{project-name}}
+  language: python
+  language_version: python3
+  types: [python]
