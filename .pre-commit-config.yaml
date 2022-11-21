@@ -7,7 +7,6 @@ repos:
     rev: 22.3.0
     hooks:
       - id: black
-        args: [--line-length=79]
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.10.1
@@ -15,10 +14,15 @@ repos:
       - id: isort
 
   - repo: https://github.com/hakancelikdev/unimport
-    rev: 0.9.6
+    rev: 0.12.2
     hooks:
       - id: unimport
-        args: [--remove, --include-star-import]
+
+  - repo: https://github.com/hakancelikdev/unexport
+    rev: 0.4.0
+    hooks:
+      - id: unexport
+        exclude: "tests/|__init__.py|"
 
   - repo: https://github.com/myint/docformatter
     rev: v1.4

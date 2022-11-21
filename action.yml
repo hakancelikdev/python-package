@@ -1,0 +1,19 @@
+# action.yml
+name: "{{package-name}}"
+description: "{{package-description}}"
+
+inputs:
+  extra_args:
+    description: "{{package-description}}"
+    required: false
+    default: "{{package-default-action-flag}}"
+runs:
+  using: "composite"
+  steps:
+    - run: pip install --upgrade pip && python -m pip install {{package-name}}==0.1.0
+      shell: bash
+    - run: {{package-name}}
+      shell: bash
+branding:
+  icon: "check"  # TODO: change
+  color: "red"  # TODO: change

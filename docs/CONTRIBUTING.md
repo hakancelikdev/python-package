@@ -35,7 +35,7 @@ $ git rebase upstream/main
 
 ## Testing
 
-Firstly make sure you have py3.8, py3.9 and py3.10 python versions installed on your
+Firstly make sure you have py3.8, py3.9, py3.10 and py3.11 python versions installed on your
 system.
 
 After typing your codes, you should run the tests by typing the following command.
@@ -50,14 +50,22 @@ If all tests pass.
 ## The final step
 
 After adding a new feature or fixing a bug please report your change to
-[changelog.md](changelog.md) and write your name, GitHub address, and email in the
-[authors.md](authors.md) file in alphabetical order.
+[changelog.md](CHANGELOG.md) and write your name, GitHub address, and email in the
+[authors.md](AUTHORS.md) file in alphabetical order.
 
 ### Changelog Guide
 
 ```
-## [Unreleased] - ././2021
+# Changelog
 
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased] - YYYY-MM-DD
+
+### Added | Fixed | Changed | Removed
 - [{Use the emoji below that suits you.} {Explain the change.} @{Add who solved the issue.}]({Add PR link})
 
 {You can provide more details or examples if you wish.}
