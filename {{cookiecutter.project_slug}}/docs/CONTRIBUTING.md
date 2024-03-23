@@ -16,7 +16,7 @@ look.**
 
 ```shell
 $ git clone git@github.com:<USERNAME>/{{ cookiecutter.project_name_url }}.git
-$ cd {{project-name}}
+$ cd {{ cookiecutter.project_name_url }}
 ```
 
 ## Setup Branch

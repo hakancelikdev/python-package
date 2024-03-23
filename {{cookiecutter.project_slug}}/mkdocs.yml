@@ -1,12 +1,6 @@
 site_name: {{ cookiecutter.project_name }}
-site_description: {{ project-description }}
+site_description: {{ cookiecutter.project_short_description }}
 site_url: https://{{ cookiecutter.project_name_url }}.hakancelik.dev
-
-repo_url: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}
-repo_name: {{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}
-edit_uri: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}/tree/main/docs
-
-copyright: Copyright &copy; 2024 - 2024 {{ cookiecutter.full_name }}
 
 markdown_extensions:
   - fenced_code

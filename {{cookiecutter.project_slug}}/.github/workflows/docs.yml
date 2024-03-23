@@ -22,4 +22,6 @@ jobs:
           git config --local user.email "{{ cookiecutter.email }}"
           git config --local user.name "{{ cookiecutter.full_name }}"
           git fetch --all
+          {% raw %}
           mike deploy --push --update-aliases ${{github.ref_name}} latest
+          {% endraw %}
