@@ -68,3 +68,8 @@ docs:
 sync-main:
 	git fetch --all
 	git rebase origin/main
+
+.PHONY: git-config-local
+git-config-local:
+	git config --local user.name "{{cookiecutter.full_name}}"
+	git config --local user.email "{{cookiecutter.email}}"

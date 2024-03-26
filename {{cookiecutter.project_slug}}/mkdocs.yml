@@ -1,6 +1,6 @@
 site_name: {{ cookiecutter.project_name }}
 site_description: {{ cookiecutter.project_short_description }}
-site_url: https://{{ cookiecutter.project_name_url }}.hakancelik.dev
+site_url: https://{{ cookiecutter.project_slug }}.hakancelik.dev
 
 markdown_extensions:
   - fenced_code
@@ -67,7 +67,7 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
 
-  homepage: https://{{ cookiecutter.project_name_url }}.hakancelik.dev
+  homepage: https://{{ cookiecutter.project_slug }}.hakancelik.dev
 
 theme:
   name: material
@@ -106,9 +106,9 @@ theme:
     repo: fontawesome/brands/github
 
 copyright: Copyright &copy; 2024 - 2024 {{ cookiecutter.full_name }}
-repo_url: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}
-repo_name: {{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}
-edit_uri: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}/tree/main/docs
+repo_url: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+repo_name: {{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+edit_uri: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tree/main/docs
 
 nav:
   - Overview: index.md

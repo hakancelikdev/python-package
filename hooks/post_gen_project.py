@@ -4,6 +4,7 @@ def git_init():
     try:
         # Run git init .
         subprocess.run(['git', 'init', '.'], check=True)
+        subprocess.run(['make', 'git-config-local'], check=True)
         print("Git repository initialized successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error: {e}")

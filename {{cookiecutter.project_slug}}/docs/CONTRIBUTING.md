@@ -6,17 +6,17 @@ To make an improvement, add a new feature or anything else, please open a issue 
 
 **Good first issues are the issues that you can quickly solve, we recommend you take a
 look.**
-[Good first issue](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}/labels/good%20first%20issue)
+[Good first issue](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/labels/good%20first%20issue)
 
 ## Fork Repository
 
-[fork the {{ cookiecutter.project_name }}.](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}/fork)
+[fork the {{ cookiecutter.project_name }}.](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/fork)
 
 ## Clone Repository
 
 ```shell
-$ git clone git@github.com:<USERNAME>/{{ cookiecutter.project_name_url }}.git
-$ cd {{ cookiecutter.project_name_url }}
+$ git clone git@github.com:<USERNAME>/{{ cookiecutter.project_slug }}.git
+$ cd {{ cookiecutter.project_slug }}
 ```
 
 ## Setup Branch
@@ -42,7 +42,7 @@ scheme when pushing your branch(es):
 ## How to Update My Local Repository
 
 ```shell
-$ git remote add upstream git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_url }}.git
+$ git remote add upstream git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.git
 $ make sync-main
 ```
 

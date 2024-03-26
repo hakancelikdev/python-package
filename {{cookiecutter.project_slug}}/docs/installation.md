@@ -2,5 +2,5 @@
 packaging tools. We recommend installing the latest stable release from PyPI with pip:
 
 ```shell
-$ pip install {{ cookiecutter.project_name_url }}
+$ pip install {{ cookiecutter.project_slug }}
 ```
