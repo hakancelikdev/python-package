@@ -1,0 +1,27 @@
+name: build-docs
+on:
+  push:
+    tags:
+      - "**"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.5.0
+      - uses: actions/setup-python@v2.3.3
+        with:
+          python-version: "3.10"
+          architecture: "x64"
+
+      - name: Install  Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .[docs]
+      - name: Build Docs
+        run: |
+          git config --local user.email "{{ cookiecutter.email }}"
+          git config --local user.name "{{ cookiecutter.full_name }}"
+          git fetch --all
+          {% raw %}
+          mike deploy --push --update-aliases ${{github.ref_name}} latest
+          {% endraw %}

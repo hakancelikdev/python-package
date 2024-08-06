@@ -1,0 +1,30 @@
+{
+  "full_name": "Hakan Çelik",
+  "email": "hakancelikdev@gmail.com",
+  "github_username": "hakancelikdev",
+  "project_name": "My Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_slug": "{{ cookiecutter.project_slug.lower().replace('-', '_') }}",
+  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "version": "0.1.0",
+  "open_source_license": ["MIT license", "GNU General Public License v3", "Not open source"],
+  "init_git": true,
+  "_copy_without_render": [
+    "docs/overrides/*.html",
+    ".github/workflows/pypi.yml",
+    ".github/workflows/tests.yml"
+  ],
+   "__prompts__": {
+     "full_name": "Author full name",
+     "email": "Author email",
+     "github_username": "GitHub username or organization",
+     "project_name": "Select your project name",
+     "package_slug": "Select your package slug",
+     "project_short_description": "Short description",
+     "pypi_username": "PyPI username",
+     "version": "Version",
+     "open_source_license": "Choose a license",
+     "init_git": "Initialize a git repository"
+    }
+}
